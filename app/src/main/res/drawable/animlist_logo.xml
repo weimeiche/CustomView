@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/loading_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_7"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_8"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_9"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_10"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_11"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/loading_12"
+        android:duration="200"/>
+</animation-list>
+    <!--根节点是animation-list（动画列表），里面有一个或者多个item节点组成，oneshot属性表示是否只播放一次，true表示只会播放一次，false表示一直循环播放，内部用item节点声明一个动画帧，android:drawable指定此帧动画所对应的图片资源，android:druation代表此帧持续的时间，整数，单位为毫秒-->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0000</color>
+    <color name="gray">#999999</color>
+    <color name="blue">#303F9F</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- dialog背景色 -->
+    <color name="bg_dialog">#ffd1dce9</color>
+
+
+    <!-- 背景色 绿色 -->
+    <color name="theme_backgroud">#07c969</color>
+    <!--主题列表点击效果-->
+    <color name="theme_light_backgroud">#97ffb4</color>
+    <!--主题按钮字体颜色-->
+    <color name="theme_btn_font">#ffffff</color>
+    <!--主题字体颜色-->
+    <color name="theme_font">#000000</color>
+    <!--主题字体点击颜色效果-->
+    <color name="theme_font_hover">#ffff0000</color>
+    <!--主题可以点击的字体颜色-->
+    <color name="theme_click_txt">#0000E3</color>
+    <!--错误提示文字颜色-->
+    <color name="theme_font_error">#ffff0000</color>
+    <!--主题按钮点击效果-->
+    <color name="theme_btn_hover">#02ad58</color>
+</resources>

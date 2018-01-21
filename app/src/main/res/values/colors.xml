@@ -6,12 +6,15 @@
     <color name="red">#ff0000</color>
     <color name="gray">#999999</color>
     <color name="blue">#303F9F</color>
+    <color name="white">#ffffff</color>
 
     <!-- 透明 -->
     <color name="transparent">#00000000</color>
     <!-- dialog背景色 -->
     <color name="bg_dialog">#ffd1dce9</color>
 
+    <!-- 背景色 绿色 -->
+    <color name="theme_btn">#07c969</color>
 
     <!-- 背景色 绿色 -->
     <color name="theme_backgroud">#07c969</color>

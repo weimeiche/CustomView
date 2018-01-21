@@ -17,7 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".Animation.TweenAnimationActivity"/>
+
         <activity android:name=".CustomView.CustomViewActivity"/>
+        <activity android:name=".CustomView.CustomTitleBarActivity" />
+        <activity android:name=".CustomView.CustomPercentActivity" />
+        <activity android:name=".CustomView.CustomClearEditActivity" />
+        <activity android:name=".CustomView.CheckCodeActivity" />
+        <activity android:name=".CustomView.TagActivity" />
+
     </application>
 
 </manifest>

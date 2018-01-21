@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.navyliu.customview.CustomView.CustomTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:left_button_text="返回"
+        app:left_button_text_color="@color/theme_font"
+        app:left_button_visible="true"
+        app:right_button_text="目录"
+        app:right_button_text_color="@color/theme_font"
+        app:title_background_color="@color/blue"
+        app:title_text="标题栏"/>
+</android.support.constraint.ConstraintLayout>

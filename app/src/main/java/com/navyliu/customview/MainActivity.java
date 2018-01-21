@@ -14,6 +14,13 @@ import com.navyliu.customview.Animation.TweenAnimationActivity;
 import com.navyliu.customview.CustomView.CustomViewActivity;
 import com.navyliu.customview.CustomView.TagsLayout;
 
+/**
+ * Created by Administrator on 2018-01-21.
+ *
+ * @auther navyLiu
+ * @Email navyliu666666@gmail.com
+ */
+
 public class MainActivity extends AppCompatActivity {
 
 	private static final String TAG = "MainActivity";
@@ -25,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
 	private TagsLayout tagsLayout;
 
+	String[] btnTextStr = {"自定义控件", "全屏沉浸式透明状态栏", "自定义弹框", "动画效果"};
+	String[] btnStr = {"CUSTOM_VIEW", "TRANSLUCENT_DECOR", "DIALOG", "ANIMATION"};
+
 	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +42,11 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 
 		// 初始化tagsLayout
-		tagsLayout = (TagsLayout)this.findViewById(R.id.tags_layout);
+		tagsLayout = (TagsLayout) this.findViewById(R.id.tags_layout);
 		ViewGroup.MarginLayoutParams lp = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		String[] str = {"自定义控件", "全屏沉浸式透明状态栏", "多媒体选择器", "动画效果", "网络图片加载"};
-		for (int i = 0; i < str.length; i++){
+		for (int i = 0; i < btnTextStr.length; i++) {
 			Button button = new Button(this);
-			button.setText(str[i]);
+			button.setText(btnTextStr[i]);
 //			button.setTextColor(Color.WHITE);
 //			button.setBackgroundResource(R.drawable.btn_theme);
 			button.setOnClickListener(new onclickLentenser(i));
@@ -48,32 +57,31 @@ public class MainActivity extends AppCompatActivity {
 
 	private class onclickLentenser implements View.OnClickListener {
 		int category;
+
 		public onclickLentenser(int i) {
 			category = i;
 		}
 
 		@Override
 		public void onClick(View view) {
-			switch (category){
-				case CUSTOM_VIEW: // 自定义控件
+			switch (btnStr[category]) {
+				case "CUSTOM_VIEW": // 自定义控件
 					startActivity(CustomViewActivity.class);
 					break;
-				case TRANSLUCENT_DECOR: // 全屏沉浸式透明状态栏
+				case "TRANSLUCENT_DECOR": // 全屏沉浸式透明状态栏
 //					startActivity(TranslucentDecorActivity.class);
 					break;
-				case PHOTO_PICKER:
+				case "DIALOG":
 //					startActivity(PhotoPickerActivity.class);
 					break;
-				case ANIMATION: // 动画效果
+				case "ANIMATION": // 动画效果
 					startActivity(TweenAnimationActivity.class);
 					break;
-				case NETWORK_IMAGE_LOADER: // 网络图片加载
-//					startActivity(ImageLoadActivity.class);
+				default:
 					break;
 			}
 		}
 	}
-
 
 
 	private void startActivity(Class<?> activity) {

@@ -13,8 +13,12 @@ import android.view.View;
 import com.navyliu.customview.R;
 
 /**
- * Created by Administrator on 2017-10-12.
+ * Created by Administrator on 2018-01-21.
+ *
+ * @auther navyLiu
+ * @Email navyliu666666@gmail.com
  */
+
 
 public class PercentView extends View {
 

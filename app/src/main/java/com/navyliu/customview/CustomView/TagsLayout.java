@@ -9,8 +9,12 @@ import android.view.ViewGroup;
 import com.navyliu.customview.R;
 
 /**
- * Created by Administrator on 2017-10-18.
+ * Created by Administrator on 2018-01-21.
+ *
+ * @auther navyLiu
+ * @Email navyliu666666@gmail.com
  */
+
 
 public class TagsLayout extends ViewGroup {
 

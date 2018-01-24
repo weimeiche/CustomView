@@ -19,4 +19,10 @@
         <item name="android:backgroundDimAmount">0.5</item>
     </style>
 
+    <!--沉浸式状态栏 开始-->
+    <!--values-->
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+    <!--沉浸式状态栏 结束-->
 </resources>

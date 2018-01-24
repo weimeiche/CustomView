@@ -12,4 +12,5 @@
         app:tagVerticalSpace="10dp"
         android:id="@+id/tags_layout"
         android:layout_height="wrap_content" />
+
 </android.support.constraint.ConstraintLayout>

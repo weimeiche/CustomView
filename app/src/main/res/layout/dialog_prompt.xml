@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_theme_raduis"
+              android:minWidth="300dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_theme_top_radius"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/prompt_system"
+        android:textColor="@color/theme_font"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/img_dialog_prompt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@null"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_dialog_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_dialog_prompt"
+            android:paddingLeft="10dp"
+            android:textColor="@color/theme_font"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout_prompt_btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_dialog_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dialog_seconed_left"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/txt_confirm"
+            android:textColor="@color/theme_font"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/sliver"/>
+
+        <Button
+            android:id="@+id/btn_dialog_seconed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dialog_seconed_right"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/txt_cancel"
+            android:textColor="@color/theme_font"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_prompt_btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_dialog_only_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_dialog_only"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/txt_confirm"
+            android:textColor="@color/theme_font"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

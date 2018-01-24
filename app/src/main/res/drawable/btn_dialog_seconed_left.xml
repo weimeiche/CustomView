@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <!-- 定义当button 处于pressed 状态时的形态。 -->
+        <shape>
+            <gradient android:angle="90" android:endColor="@color/theme_btn_hover" android:startColor="@color/theme_btn_hover" android:type="linear"/>
+            <corners android:bottomLeftRadius="5dp" />
+            <padding android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <!-- 定义当button 处于pressed 状态时的形态。 -->
+        <shape>
+            <gradient android:angle="90" android:endColor="@color/theme_backgroud" android:startColor="@color/theme_backgroud" android:type="linear"/>
+            <corners android:bottomLeftRadius="5dp" />
+            <padding android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <!-- 定义当button获得 focus时的形态 -->
+        <shape>
+            <!-- 设置渐变 -->
+            <gradient android:angle="90" android:endColor="@color/theme_btn_hover" android:startColor="@color/theme_btn_hover" android:type="linear"/>
+            <!-- 设置圆角 -->
+            <corners android:bottomLeftRadius="5dp" />
+            <!-- 设置偏移量 -->
+            <padding android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp"/>
+        </shape>
+    </item>
+
+</selector>

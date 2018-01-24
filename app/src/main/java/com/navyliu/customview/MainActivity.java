@@ -13,6 +13,8 @@ import android.widget.Button;
 import com.navyliu.customview.Animation.TweenAnimationActivity;
 import com.navyliu.customview.CustomView.CustomViewActivity;
 import com.navyliu.customview.CustomView.TagsLayout;
+import com.navyliu.customview.Dialog.DialogActivity;
+import com.navyliu.customview.Translucent.TranslucentActivity;
 
 /**
  * Created by Administrator on 2018-01-21.
@@ -69,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
 					startActivity(CustomViewActivity.class);
 					break;
 				case "TRANSLUCENT_DECOR": // 全屏沉浸式透明状态栏
-//					startActivity(TranslucentDecorActivity.class);
+					startActivity(TranslucentActivity.class);
 					break;
 				case "DIALOG":
-//					startActivity(PhotoPickerActivity.class);
+					startActivity(DialogActivity.class);
 					break;
 				case "ANIMATION": // 动画效果
 					startActivity(TweenAnimationActivity.class);

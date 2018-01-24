@@ -16,6 +16,8 @@
     <!-- 背景色 绿色 -->
     <color name="theme_btn">#07c969</color>
 
+    <!--分割线，边线-->
+    <color name="sliver">#D8D8D8</color>
     <!-- 背景色 绿色 -->
     <color name="theme_backgroud">#07c969</color>
     <!--主题列表点击效果-->

@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
-              tools:context=".TranslucentDecor.TranslucentDecorActivity"
-              android:layout_height="match_parent" >
+              android:layout_height="match_parent"
+              android:background="@color/blue"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
-    <TextView
+    <com.navyliu.customview.CustomView.CustomTitleBar
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="50dp"
-        android:background="@color/blue"
-        android:text="标题"
-        android:textColor="@color/gray"/>
+        android:layout_height="45dp"
+        app:left_button_text="返回"
+        app:left_button_text_color="@color/theme_font"
+        app:left_button_visible="true"
+        app:right_button_text="目录"
+        app:right_button_text_color="@color/theme_font"
+        app:title_background_color="@color/blue"
+        app:title_text="标题栏"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="150dp"
-        android:background="@color/blue"
-        android:text="标题2"
-        android:textColor="@color/gray"/>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 </LinearLayout>
